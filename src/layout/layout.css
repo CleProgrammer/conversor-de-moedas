@@ -1,0 +1,219 @@
+.main-exchange {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+}
+
+.main-exchange .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: 2px solid rgb(59, 59, 59);
+}
+
+.main-exchange .main-container .first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+.main-exchange .main-container .priceInReal {
+    font-size: 80px;
+    color: white;
+}
+
+.main-exchange .section-coins {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 95%;
+    height: 50%;
+}
+
+.main-exchange .section-coins .box-coin1,
+.main-exchange .section-coins .box-coin2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 48%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px 0px 10px 10px;
+}
+
+
+.main-exchange .section-coins .box-coin1 select,
+.main-exchange .section-coins .box-coin2 select {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    width: 98%;
+    color: gray;
+    border: none;
+    border-bottom: 1.5px solid gray;
+    outline: none;
+    padding-left: 5px;
+}
+
+.main-exchange .section-coins .box-coin1 option,
+.main-exchange .section-coins .box-coin2 option {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1.5px solid gray;
+    padding-bottom: 10px;
+    width: 98%;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.main-exchange .section-coins .box-coin1 .priceCoin1,
+.main-exchange .section-coins .box-coin2 .priceCoin2 {
+    width: 80%;
+    height: 70%;
+    border: none;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(146, 146, 146);
+}
+
+.chart {
+    width: 70%;
+    height: 240px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 480px) {
+    .main-exchange .main-container {
+        justify-content: space-around;
+        width: 95%;
+        height: 70%;
+    }
+
+    .main-exchange .main-container .priceInReal {
+        font-size: 65px;
+    }
+
+    .main-exchange .main-container .nameCoin {
+        font-size: 20px;
+    }
+
+    .main-exchange .section-coins {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        height: 60%;
+
+        /*background-color: orangered;*/
+    }
+
+    .main-exchange .section-coins .box-coin1,
+    .main-exchange .section-coins .box-coin2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        height: 40%;
+    }
+
+    .main-exchange .section-coins .box-coin1 select,
+    .main-exchange .section-coins .box-coin2 select {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .main-exchange .section-coins .box-coin1 .priceCoin1,
+    .main-exchange .section-coins .box-coin2 .priceCoin2 {
+        font-size: 40px;
+    }
+
+    .chart {
+        width: 95%;
+        height:25%;
+        background-color: green;
+    }
+}
+
+/*Extra large devices*/
+@media (min-width: 1920px) {
+    .main-exchange .main-container {
+        height: 60%;
+    }
+
+    .main-exchange .main-container .first-section {
+        height: 50%;
+        align-items: center;
+    }
+
+    .main-exchange .main-container .priceInReal {
+        font-size: 120px;
+        color: white;
+    }
+
+    .main-exchange .main-container .nameCoin {
+        font-size: 35px;
+        color: white;
+    }
+
+    .main-exchange .section-coins {
+        align-items: center;
+    }
+
+    .main-exchange .section-coins .box-coin1,
+    .main-exchange .section-coins .box-coin2 {
+        height: 70%;
+    }
+
+
+    .main-exchange .section-coins .box-coin1 select,
+    .main-exchange .section-coins .box-coin2 select {
+        font-size: 23px;
+        width: 50%;
+    }
+
+    .main-exchange .section-coins .box-coin1 .priceCoin1,
+    .main-exchange .section-coins .box-coin2 .priceCoin2 {
+        font-size: 60px;
+    }
+
+    .chart {
+        height: 35%;
+    }
+}
