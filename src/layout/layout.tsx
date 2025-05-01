@@ -113,8 +113,6 @@ export default function Layout() {
             let fetchData = await fetch(url)
             let dataJson = await fetchData.json()
 
-
-
             let saveNumDays = 15
             if( window.screen.width <= 480 ) {
                 saveNumDays = 5
@@ -123,7 +121,7 @@ export default function Layout() {
             let url2 = `https://economia.awesomeapi.com.br/json/daily/${saveCoins1}-${saveCoins2}/${saveNumDays}`
             let fetchData2 = await fetch(url2)
             let dataJson2 = await fetchData2.json()
-            console.log( dataJson2 )
+            //console.log( dataJson2 )
 
             dataJson2.toReversed().map((item:any) => setData((prevState:any) => ([
                 ...prevState,
@@ -138,7 +136,7 @@ export default function Layout() {
             })
             setSavePrice( dataJson )
 
-            console.log('fdgdgdfg')
+            //console.log('fdgdgdfg')
 
             if( c('.priceCoin1').value > 1 ) {
                 let priceMoreThanOne = c('.priceCoin1').value * parseFloat(dataJson[0].ask)

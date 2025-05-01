@@ -171,6 +171,58 @@ input[type=number] {
     }
 }
 
+/*Small Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-exchange .main-container {
+        justify-content: space-around;
+        width: 80%;
+        height: 30vh;
+        margin-top: 20vh;
+    }
+
+    .main-exchange .main-container .priceInReal {
+        font-size: 65px;
+    }
+
+    .main-exchange .main-container .nameCoin {
+        font-size: 20px;
+    }
+
+    .main-exchange .section-coins {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        height: 60%;
+    }
+
+    .main-exchange .section-coins .box-coin1,
+    .main-exchange .section-coins .box-coin2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 47%;
+        height: 40%;
+    }
+
+    .main-exchange .section-coins .box-coin1 select,
+    .main-exchange .section-coins .box-coin2 select {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .main-exchange .section-coins .box-coin1 .priceCoin1,
+    .main-exchange .section-coins .box-coin2 .priceCoin2 {
+        font-size: 30px;
+    }
+
+    .chart {
+        margin-bottom: 18vh;
+        width: 80%;
+        height:25%;
+    }
+}
+
 /*Extra large devices*/
 @media (min-width: 1920px) {
     .main-exchange .main-container {
